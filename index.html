@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .big-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .big-div div:nth-child(1){
+        padding: 30px;
+        color: white;
+        background-color: aqua;
+        text-align: center;
+    }
+    .aside-and-con{
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+    }
+    .aside-and-con div:nth-child(1),.aside-and-con div:nth-child(3){
+        padding: 50px;
+        text-align: center;
+        background-color: grey;
+        height: 35vh;
+        color: white;
+    }
+    .aside-and-con div:nth-child(2){
+        background-color: rgb(51, 48, 48);
+        color: white;
+        text-align: center;
+    }
+    .two{
+        display: grid;
+        height: 25vh;
+        grid-template-columns: 4fr 4fr;
+        text-align: center;
+        gap: 20px;
+    }
+    .two div:nth-child(1), .two div:nth-child(2){
+        height: 35vh;
+        background-color: blueviolet;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer div:nth-child(1){
+        height: 10vh;
+        background-color: darkblue;
+        color: white;
+        padding: 30px;
+  }
+</style>
+<body>
+    <div class="big-div">
+        <div><h1>header</h1></div>
+    </div>
+    <div class="aside-and-con">
+        <div>aside</div>
+        <div>Content</div>
+        <div>aside</div>
+    </div>
+    <div class="two">
+        <div>Left</div>
+        <div>right</div>
+    </div>
+    <div class="footer">
+        <div>Footer</div>
+    </div>
+</body>
+</html>
